@@ -36,6 +36,9 @@ def on_router_dispatch():
             # Update user's activity timestamp
             user.last_activity = _datetime.now()
             user.save()
+
+            # Update session's timestamp
+            session.modified = True
         else:
             # Sign out inactive user
             _auth.sign_out(user)

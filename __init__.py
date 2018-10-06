@@ -1,11 +1,11 @@
 """PytSite Auth HTTP Plugin Events Handlers
 """
-__author__ = 'Alexander Shepetko'
+__author__ = 'Oleksandr Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
 
-def plugin_load_uwsgi():
+def plugin_load_wsgi():
     from pytsite import router
     from plugins import auth as _auth
     from . import _eh

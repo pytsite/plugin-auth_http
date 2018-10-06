@@ -1,6 +1,6 @@
 {
   "name": "auth_http",
-  "version": "1.0.1",
+  "version": "2.0",
   "description": {
     "en": "Auth HTTP",
     "ru": "Auth HTTP",
@@ -8,14 +8,14 @@
   },
   "url": "https://github.com/pytsite/plugin-auth_http",
   "author": {
-    "name": "Alexander Shepetko",
+    "name": "Oleksandr Shepetko",
     "email": "a@shepetko.com",
     "url": "https://shepetko.com"
   },
   "requires": {
-    "pytsite": ">=7.30",
-    "plugins": [
-      "auth>=3.4"
-    ]
+    "pytsite": "8.x",
+    "plugins": {
+      "auth": "3.x"
+    }
   }
 }

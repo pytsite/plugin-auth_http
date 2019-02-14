@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.0.1 (2019-02-14)
+
+User's IP address detection fixed.
+
+
 ### 2.0 (2018-10-06)
 
 Support of `pytsite-8.x`.

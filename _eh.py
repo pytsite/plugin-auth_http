@@ -51,7 +51,7 @@ def on_auth_sign_in(user: _auth.AbstractUser):
     s.modified = True
 
     # Update IP address and geo data
-    user.last_ip = _router.request().remote_addr
+    user.last_ip = _router.request().real_remote_addr
     geo_ip = user.geo_ip
     if not user.timezone:
         user.timezone = geo_ip.timezone

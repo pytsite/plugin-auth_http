@@ -1,6 +1,6 @@
 {
   "name": "auth_http",
-  "version": "2.0",
+  "version": "2.0.1",
   "description": {
     "en": "Auth HTTP",
     "ru": "Auth HTTP",
@@ -13,9 +13,9 @@
     "url": "https://shepetko.com"
   },
   "requires": {
-    "pytsite": "8.x",
+    "pytsite": ">=8.10",
     "plugins": {
-      "auth": "3.x"
+      "auth": "^3.0"
     }
   }
 }

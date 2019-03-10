@@ -6,6 +6,7 @@ __license__ = 'MIT'
 
 from datetime import datetime as _datetime
 from pytsite import router as _router
+from pytsite import reg as _reg
 from plugins import auth as _auth
 
 
@@ -52,13 +53,16 @@ def on_auth_sign_in(user: _auth.AbstractUser):
 
     # Update IP address and geo data
     user.last_ip = _router.request().real_remote_addr
-    geo_ip = user.geo_ip
-    if not user.timezone:
-        user.timezone = geo_ip.timezone
-    if not user.country:
-        user.country = geo_ip.country
-    if not user.city:
-        user.city = geo_ip.city
+
+    if _reg.get('auth.user_geo_set', True):
+        geo_ip = user.geo_ip
+
+        if not user.timezone:
+            user.timezone = geo_ip.timezone
+        if not user.country:
+            user.country = geo_ip.country
+        if not user.city:
+            user.city = geo_ip.city
 
     user.save()
 

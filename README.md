@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.1 (2019-03-10)
+
+New config parameter `auth.user_geo_set` added.
+
+
 ### 2.0.1 (2019-02-14)
 
 User's IP address detection fixed.

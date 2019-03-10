@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.1.1 (2019-03-10)
+
+Throttling added for user's last activity saving. 
+
+
 ### 2.1 (2019-03-10)
 
 New config parameter `auth.user_geo_set` added.

@@ -35,8 +35,10 @@ def on_router_dispatch():
             _router.no_cache(True)
 
             # Update user's activity timestamp
-            user.last_activity = _datetime.now()
-            user.save()
+            now = _datetime.now()
+            la_delta = (now - user.last_activity)
+            if not _router.request().is_xhr and (not user.last_activity or la_delta.days or la_delta.seconds > 60):
+                user.set_field('last_activity', now).save()
 
             # Update session's timestamp
             session.modified = True

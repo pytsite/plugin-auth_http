@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.1.3 (2019-05-10)
+
+Last commit typo fixed.
+
+
 ### 2.1.2 (2019-05-10)
 
 User's last activity time calculation error fixed.

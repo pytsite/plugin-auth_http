@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.1.2 (2019-05-10)
+
+User's last activity time calculation error fixed.
+
+
 ### 2.1.1 (2019-03-10)
 
 Throttling added for user's last activity saving. 

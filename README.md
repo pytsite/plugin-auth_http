@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.2 (2019-07-18)
+
+Support of `pytsite-9.2` added.
+
+
 ### 2.1.3 (2019-05-10)
 
 Last commit typo fixed.
